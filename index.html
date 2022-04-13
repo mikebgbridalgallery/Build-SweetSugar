@@ -6,6 +6,7 @@
 	<title>Unity WebGL Player | My project</title>
     <link rel="shortcut icon" href="TemplateData/img/favicon.ico">
     <link rel="stylesheet" href="TemplateData/css/style.css">
+    <link rel="manifest" href="manifest.json?v=1.0b0">
 </head>
 <body>
   
@@ -179,6 +180,13 @@
 		document.body.appendChild(script);
 		
     </script>
-	
+	<script>
+		if ('serviceWorker' in navigator) {
+			console.log("start of serviceWorker register");
+			navigator.serviceWorker
+			  .register('/sw.js')
+			  .then(() => { console.log('Service Worker Registered'); });
+		}
+	</script>
   </body>
 </html>
