@@ -3,7 +3,7 @@
   "display": "fullscreen",
   "icons": [
     {
-      "src": "TemplateData/favicon.ico",
+      "src": "TemplateData/favicon.ico?v=1.0b0",
       "sizes": "256x256",
       "type": "image/png"
     }
